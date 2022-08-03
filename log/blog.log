@@ -1,0 +1,27 @@
+2022-08-03 15:19:44.075  INFO 2248 --- [main] c.f.FerhatFullStackApplicationTests      : Starting FerhatFullStackApplicationTests using Java 18.0.2 on FERHAT with PID 2248 (started by NERİA in A:\FerhatFullStack)
+2022-08-03 15:19:44.075  INFO 2248 --- [main] c.f.FerhatFullStackApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-08-03 15:19:44.927  INFO 2248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-03 15:19:44.943  INFO 2248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-08-03 15:19:45.381  INFO 2248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-03 15:19:45.428  INFO 2248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-03 15:19:45.584  INFO 2248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-03 15:19:45.678  INFO 2248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-03 15:19:45.866  INFO 2248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-03 15:19:45.881  INFO 2248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-03 15:19:46.053  INFO 2248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-03 15:19:46.053  INFO 2248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-03 15:19:46.246  WARN 2248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-03 15:19:46.598  INFO 2248 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2022-08-03 15:19:46.598  INFO 2248 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-03 15:19:47.038  WARN 2248 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 568249e3-0a2d-4819-b644-4f283d182486
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-08-03 15:19:47.195  INFO 2248 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b6e4761, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f453129, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d3a28b5, org.springframework.security.web.header.HeaderWriterFilter@3da61af2, org.springframework.security.web.csrf.CsrfFilter@20d65767, org.springframework.security.web.authentication.logout.LogoutFilter@42734b71, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e847e71, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5eba9e41, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@642ec6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@75ac326f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@306bf4c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cf80dfb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@656302c, org.springframework.security.web.session.SessionManagementFilter@5bf4dfb, org.springframework.security.web.access.ExceptionTranslationFilter@457b8fc3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53d2f0ec]
+2022-08-03 15:19:47.242  INFO 2248 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-03 15:19:47.273  INFO 2248 --- [main] c.f.FerhatFullStackApplicationTests      : Started FerhatFullStackApplicationTests in 3.516 seconds (JVM running for 4.867)
+2022-08-03 15:19:47.568  INFO 2248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-03 15:19:47.568  INFO 2248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-03 15:19:47.568  INFO 2248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
