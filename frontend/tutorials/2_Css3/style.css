@@ -1,4 +1,136 @@
-p{
-color: rgb(117, 26, 190);
+#anchor_id > a{
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* span ile div arasındaki farklar;
+span: aynı satırda devam ettirir.
+div: alt alta devam ettirir.
+*/
+#div1{
+    background-color: brown;
+    color: bisque;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; */
+    /* margin: 20px; */
+    margin: 25px 15px;
+    
+    /* padding= iç boşluk oluşturur. */
+    /* padding: 25px 20px 15px 10px; */
+    /* padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    /* border yapısı
+        çizgi border= solid
+       çizgi çizgi border=dotted  */
+
+     border: 5px solid rgb(141, 15, 199);
+
+    /* border radius yapısı */
+
+/* border-top-right-radius: 20px;
+border-top-left-radius: 25px; */
+border-radius: 80px;
+font-size: 25px;
+font-weight: bold;
+font-style: italic;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
 
 }
+
+#paragraf_id{
+    /* text-transform */
+text-transform: uppercase;  /*bütün harfleri büyütür. */
+text-transform: lowercase;  /*bütün harfleri küçültür. */
+text-transform: capitalize; /*Baş harfleri büyütür. */
+ 
+/* paragrafın duracağı yeri ayarlar */
+/* text-align: left;  
+text-align: right;
+text-align: center; */
+text-align: justify;
+
+text-decoration: underline ;
+text-decoration: overline; 
+text-decoration: line-through;
+text-decoration: none;
+text-indent: 40px; 
+
+
+/* 1px sağa 2px sola;gölge yapar*/
+/* text-shadow: 1px 2px black; */
+
+
+/* kelimeler arası boşluk =
+ word-spacing: 2px;*/
+
+/* letter-spacing: 1px; = 
+ harfler arası boşluk */
+
+
+/* satırlar arası boşluk */
+ /* line-height: 20px; */
+
+ column-count: 3;
+ column-rule: 2px solid black;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* tag ile erişim */
+/* p{
+color: rgb(231, 11, 70);
+
+} */
+
+/* id= tek yapılarda kullanınmnı önerilir */ 
+/* #heading_id{
+    color: blueviolet;
+} */
+/* class= çoklu yapılarda kullanımı önerilir */
+/* .heading_class1{
+    color: brown;
+}
+
+.heading_class2{
+    font-size: 5rem;
+} */
+
+
