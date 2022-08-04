@@ -1,130 +1,213 @@
-#anchor_id > a{
-
-
-
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
+/* responsive img */
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 2px;
+}
 
 
+/* #icon_id {
+    font-size: 50px;
+    color: rgb(151, 88, 99);
+}
+
+#icon_id2 {
+    font-size: 40px;
+    color: rgb(151, 88, 99);
+}
+
+#icon_id3 {
+    font-size: 40px;
+    color: rgb(151, 88, 99);
+}
+
+#icon_id4 {
+    font-size: 40px;
+    color: rgb(151, 88, 99);
+}
+
+#icon_id5 {
+    font-size: 40px;
+    color: rgb(151, 88, 99);
+} */
+
+#picture_id {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li {
+    color: rgb(2, 14, 179);
+    display: inline-block;
+    background-color: rgb(233, 124, 29);
+    padding: 3px;
+    margin: 4px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px 3px midnightblue;
+}
+
+li:hover {
+    cursor: pointer;
+    background: red;
+    transition: .7s all;
+}
+
+ul>li:first-child {
+    color: black;
+}
+
+ul>li:last-child {
+    color: black
+}
+
+#anchor_id>a {
+    /* color: blueviolet;
+    display: inline;
+    display: block;
+    display: inline-block; */
+    /* kapladığı alan da görünmez olur 
+    display: none;*/
+    /* kapladığı alanı kaybettirmeden görünmez olur 
+    visibility: hidden; */
+    text-decoration: none;
+    color: midnightblue;
+    background-color: gold;
+    padding: 15px;
+    margin-top: 25px!important;
+    border-radius: 15%;
+}
+
+.float_div {
+    /* background-color: darkgreen;
+    color: black;
+    width: 23%; */
+    /* max width 25% 
+    max-width: 25%;*/
+    /* min width 25% 
+    min-width: 25%;*/
+    /* min-height: 75px;
+    display: inline-block;
+    float: left; */
+    /* float: right; */
+}
 
 
+/* clearfix yapısı */
 
 
-
-
+/* .clear:before {
+    content: "";
+    clear: both;
+    display: block;
+} */
 
 
 /* span ile div arasındaki farklar;
-span: aynı satırda devam ettirir.
-div: alt alta devam ettirir.
-*/
-#div1{
+    span: aynı satırda devam ettirir.
+    div: alt alta devam ettirir.
+   */
+
+#div1 {
     background-color: brown;
     color: bisque;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 25px;
-    
     /* margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
     margin-left: 20px; */
     /* margin: 20px; */
     margin: 25px 15px;
-    
     /* padding= iç boşluk oluşturur. */
     /* padding: 25px 20px 15px 10px; */
     /* padding-right: 10px;
     padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px; */
-
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-
     /* border yapısı
         çizgi border= solid
        çizgi çizgi border=dotted  */
-
-     border: 5px solid rgb(141, 15, 199);
-
+    border: 5px solid rgb(141, 15, 199);
     /* border radius yapısı */
-
-/* border-top-right-radius: 20px;
-border-top-left-radius: 25px; */
-border-radius: 80px;
-font-size: 25px;
-font-weight: bold;
-font-style: italic;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
-
+    /* border-top-right-radius: 20px;
+       border-top-left-radius: 25px; */
+    border-radius: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
 }
 
-#paragraf_id{
+#paragraf_id {
     /* text-transform */
-text-transform: uppercase;  /*bütün harfleri büyütür. */
-text-transform: lowercase;  /*bütün harfleri küçültür. */
-text-transform: capitalize; /*Baş harfleri büyütür. */
- 
-/* paragrafın duracağı yeri ayarlar */
-/* text-align: left;  
-text-align: right;
-text-align: center; */
-text-align: justify;
-
-text-decoration: underline ;
-text-decoration: overline; 
-text-decoration: line-through;
-text-decoration: none;
-text-indent: 40px; 
-
-
-/* 1px sağa 2px sola;gölge yapar*/
-/* text-shadow: 1px 2px black; */
-
-
-/* kelimeler arası boşluk =
- word-spacing: 2px;*/
-
-/* letter-spacing: 1px; = 
- harfler arası boşluk */
-
-
-/* satırlar arası boşluk */
- /* line-height: 20px; */
-
- column-count: 3;
- column-rule: 2px solid black;
-
-
-
-
-
-
+    text-transform: uppercase;
+    /*bütün harfleri büyütür. */
+    text-transform: lowercase;
+    /*bütün harfleri küçültür. */
+    text-transform: capitalize;
+    /*Baş harfleri büyütür. */
+    /* paragrafın duracağı yeri ayarlar */
+    /* text-align: left;  
+       text-align: right;
+       text-align: center; */
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none;
+    text-indent: 40px;
+    /* 1px sağa 2px sola;gölge yapar*/
+    /* text-shadow: 1px 2px black; */
+    /* kelimeler arası boşluk =
+       word-spacing: 2px;*/
+    /* letter-spacing: 1px; = 
+       harfler arası boşluk */
+    /* satırlar arası boşluk */
+    /* line-height: 20px; */
+    column-count: 3;
+    column-rule: 2px solid black;
 }
-
-
-
-
-
-
-
 
 
 /* tag ile erişim */
+
+
 /* p{
-color: rgb(231, 11, 70);
+       color: rgb(231, 11, 70);
 
-} */
+}  */
 
-/* id= tek yapılarda kullanınmnı önerilir */ 
+
+/* id= tek yapılarda kullanınmnı önerilir */
+
+
 /* #heading_id{
     color: blueviolet;
-} */
+}  */
+
+
 /* class= çoklu yapılarda kullanımı önerilir */
+
+
 /* .heading_class1{
     color: brown;
 }
@@ -132,5 +215,3 @@ color: rgb(231, 11, 70);
 .heading_class2{
     font-size: 5rem;
 } */
-
-
