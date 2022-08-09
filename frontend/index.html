@@ -5,25 +5,24 @@
 <title>My Portfolyo Sites</title>
 
 <!-- favicon -->
-<link rel="icon" href="pictures/favicon.png"/>
+<link rel="icon" href="pictures/favicon.png" />
 
 <!-- Turkce karakter -->
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 
 <!-- responsive design -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- seo -->
-<meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,es5,es6"/>
-<meta name="description" content="my portfolyo sites, html5,css3,js,jquery,bootstrap,seo"/>
-<meta name="author" content="Ferhat Kaplan"/>
+<meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,es5,es6" />
+<meta name="description" content="my portfolyo sites, html5,css3,js,jquery,bootstrap,seo" />
+<meta name="author" content="Ferhat Kaplan" />
 
 <!-- Google Fonts-->
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans:ital,wght@1,300&family=Quicksand:wght@300&display=swap"
-      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans:ital,wght@1,300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
 <!-- Font awesome-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
 <!-- Bootstrap CSS v5.0.2 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
@@ -43,34 +42,86 @@
 
 <!-- wow js-->
 <script src="js/wow.min.js"></script>
-<script> new WOW().init() </script>
+<script>
+    new WOW().init()
+</script>
 
 <!--sweet alert-->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <!-- External CSS -->
 <link rel="stylesheet" href="style.css">
+
 <head>
-    <body>
 
- <!-- start codes -->
-
-
+    <body data-bs-spy="scroll" data-bs-target="#navbar">
+        <!-- start codes -->
 
 
- <!-- end codes -->
+        <!--  navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <!-- <div class="container-fluid">  -->
+                <div class="container">
+                         <!-- LOGO -->
+                    <!--div#my_logo>a>img -->
+                    <div id="my_logo">
+                        <a class="navbar-brand" href="index.html">
+                            <img id="my_logo_pic" src="pic/tiger-3297540.png" alt="">
+                        </a>
+                    </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="my_work"> <i class="fa-solid fa-briefcase ms-3"></i> My Work </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog">  <i class="fa-solid fa-camera ms-3"></i>  My Blog </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-dungeon ms-3"></i>  My Company
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">News</a></li>
+                                <li><a class="dropdown-item" href="#">Ability</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about"> <i class="fa-solid fa-globe ms-3"></i>  About </a>
+                        </li>
+                        <li>
+                    </ul>
+                    <div class="d-flex align-items-center" id="right_navbar"></div>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Ne arıyorsun?" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Bul</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--  navbar end -->
 
 
- <!-- Bootstrap JavaScript Libraries -->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
- <!-- External JS -->
- <script src="template.js"></script>
 
-</body>
+
+        <!-- end codes -->
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+        <!-- External JS -->
+        <script src="template.js"></script>
+
+    </body>
+
 </html>
-
-
-
-

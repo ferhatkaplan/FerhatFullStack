@@ -14,7 +14,7 @@ project version: v.1
 body{
     position: relative;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
-    background-color: #618685;
+    background-color: #05c0e5;
 }
 html{
     font-size: 15px;
@@ -33,6 +33,19 @@ p{
     margin-right: 0.8rem;
     text-align: justify;
 }
+
+.my_clear::before {
+    content: "";
+    clear: both;
+    display: block
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* line-clamp --->(satır sayısı ile alakalı)<--- */
 .line_clamp4{
     display: -webkit-box;
@@ -48,6 +61,13 @@ p{
     -webkit-box-orient: vertical;
 }
 
+/*###########################################################################*/
+
+/* NAVBAR */
+#my_logo_pic {
+    width: 5rem;
+
+}
 
 
 
