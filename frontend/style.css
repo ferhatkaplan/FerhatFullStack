@@ -79,6 +79,25 @@ img{
     color: #05c0e5;
 }
 
+/*###########################################################################*/
+/* HEADER */
+
+/*###########################################################################*/
+/* MAIN */
+
+/*###########################################################################*/
+/* FOOTER */
+footer{
+    min-height: 20rem;
+    width: auto;
+    background-color: #38546f;
+    color: white;
+}
+#copy_right{
+    background-color: #38546f;
+}
+
+
 
 
 font-family: 'Crimson Text','Josefin Sans','Quicksand', serif,sans-serif;
