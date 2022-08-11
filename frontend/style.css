@@ -66,15 +66,18 @@ img{
 /* NAVBAR */
 #my_logo_pic {
     width: 5rem;
-
+    border-radius: 50%;
+}
+#my_logo_pic:hover{
+    opacity: 0.5;
+    /*box-shadow: 1px 1px 3px 1px; */
 }
 
-
-
-
-
-
-
+#navbar_icon i{
+    font-size: 1.3rem;
+    margin-right: 0.3rem;
+    color: #05c0e5;
+}
 
 
 
