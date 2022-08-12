@@ -37,7 +37,7 @@ p{
 .my_clear::before {
     content: "";
     clear: both;
-    display: block
+    display: block;
 }
 
 img{
@@ -66,10 +66,12 @@ img{
 /* NAVBAR */
 #navbar{
     opacity: 1;
+
 }
 #my_logo_pic {
     width: 5rem;
-    border-radius: 50%;
+    height: auto;
+
 }
 #my_logo_pic:hover{
     opacity: 0.5;
