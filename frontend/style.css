@@ -44,8 +44,13 @@ img{
     max-width: 100%;
     height: auto;
 }
-
-
+.heading_class{
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 10rem;
+}
 /* line-clamp --->(satır sayısı ile alakalı)<--- */
 .line_clamp4{
     display: -webkit-box;
@@ -85,8 +90,18 @@ img{
 }
 /*###########################################################################*/
 /* HEADER */
-#header{
+header{
+    height: 80vh;
+    padding-top:15rem;
+    background-image: url("pic/kullan.jpg");
+    background-position: 50% 50%;
+    background-size:cover;
+}
+
+header{
     position: relative;
+    height: 99vh;
+
 }
 header::before{
     position: absolute;
@@ -95,16 +110,58 @@ header::before{
     right: 0;
     left: 0;
     content:"";
-    height: 110vh;
     padding-top: 15rem;
     background-image: url("pic/kullan.jpg");
     background-position: 50% 50%;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.4;
     z-index: -1;
 }
 /*###########################################################################*/
 /* MAIN */
+#my_work{
+    padding:4rem;
+}
+
+#my_work h3,h4,p{
+    color:black;
+}
+/* parallax_class */
+
+.parallax_class{
+    position: relative;
+    height: 40rem;
+    padding:12rem;
+    text-align: center;
+}
+.parallax_class::before{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    content:"";
+    opacity: .7;
+    z-index:-1;
+
+    padding: 3rem;
+    background-image: url("pic/photos-256887_1920.jpg");
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.parallax_class h2,h1{
+    color:white;
+}
+
+#my_work i{
+    text-align: center;
+    color:black;
+    font-size: 5rem;
+}
+
+
 
 /*###########################################################################*/
 /* FOOTER */
