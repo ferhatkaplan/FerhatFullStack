@@ -78,19 +78,26 @@ img{
     margin-right: 0.3rem;
     color: #05c0e5;
 }
-
 /*###########################################################################*/
 /* HEADER */
-
-header{
-    height: 90vh;
+#header{
+    position: relative;
+}
+header::before{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content:"";
+    height: 110vh;
     padding-top: 15rem;
     background-image: url("pic/kullan.jpg");
     background-position: 50% 50%;
     background-size: cover;
-
+    opacity: 0.7;
+    z-index: -1;
 }
-
 /*###########################################################################*/
 /* MAIN */
 
@@ -103,10 +110,7 @@ footer{
     color: white;
 }
 #copy_right{
-    background-color: #121a35;
+    background-color: #000000;
 }
-
-
-
 
 font-family: 'Crimson Text','Josefin Sans','Quicksand', serif,sans-serif;
