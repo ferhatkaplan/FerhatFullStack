@@ -82,6 +82,15 @@ img{
 /*###########################################################################*/
 /* HEADER */
 
+header{
+    height: 90vh;
+    padding-top: 15rem;
+    background-image: url("pic/gozl.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+
+}
+
 /*###########################################################################*/
 /* MAIN */
 
@@ -90,11 +99,11 @@ img{
 footer{
     min-height: 20rem;
     width: auto;
-    background-color: #89515e;
+    background-color: #632a42;
     color: white;
 }
 #copy_right{
-    background-color: #41252e;
+    background-color: #121a35;
 }
 
 
