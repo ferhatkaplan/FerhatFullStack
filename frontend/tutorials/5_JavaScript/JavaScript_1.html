@@ -1,5 +1,6 @@
 <!doctype html>
-<html  th:lang="${#locale.language}"  xmlns:th="http://www.thymeleaf.org" >
+<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Title</title>
     <!-- Turkce karakter -->
@@ -32,16 +33,36 @@
 
     <!--      <link rel="stylesheet"   th:href="@{/css/index.css}">-->
     <!--      <script th:src="@{/js/index.js}"></script>-->
-
+    <!-- external js -->
+    <script src="template.js"></script>
 </head>
 
 <body class="container">
-<!-- start codes -->
-<h1 class="text-primary">Ana Sayfa</h1>
+    <!-- start codes -->
+    <h1 class="text-info">Ana Sayfa</h1>
+
+    <!-- internal js -->
+    <script>
+        // alert("selam")
+    </script>
+    <!-- 
+    window=> bütün nesnelere erişmek için kullanılır.
+     document=> sadece o sayfaya erişim sağlamak için kullanılır.
+     npm=> senkron (aynı anda sadece 1 iş yapar diğerlerini bekletir)
+     yarn=> asenkron (birden fazla iş yapar ve daha hızlıdır)
+
+     libraries: Önceden yazılmış hazır kodlar vardır.
+     İstediğimiz dili kullanırız. (jQuery, React)
+
+    
+     Framework: Belli kuralları vardır. Bizden beklenen sadece bu kurallarrı yerine getirmektir.
+     Daha hızlı iş yapar. (Angular, Vue)
+    -->
 
 
-<!-- ends codes -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <!-- ends codes -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
