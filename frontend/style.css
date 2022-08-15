@@ -153,7 +153,13 @@ header::before{
 }
 .parallax_class h2,h1{
     color:white;
+
 }
+.parallax_class p{
+    color: white;
+
+}
+
 
 #my_work i{
     text-align: center;
