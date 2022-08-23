@@ -1,4 +1,4 @@
-// alert("deneme") => single comment
+alert("deneme") 
 /*
 multiple comment
  */
@@ -1068,339 +1068,333 @@ let number = () => {
       }
     };
   
-    //console
-    console.log(person);
-    console.log(person.adi.toLowerCase());
-    console.log(person.soyadi);
-    console.log(typeof person.soyadi);
-    console.log(person.isLogin);
-    console.log(person.hescode);
-    console.log(person.teknolojiDizi);
-    console.log(person.teknolojiDizi[0]);
-    console.log(person.javaObjesi);
-  
-    //sonradan objeye attributes eklemek
-    person.meslek = "Bilgisayar Mühendisi";
-    console.log(person.meslek);
-    console.log(person.hescode);
-    console.log(person['hescode']);
-    //delete
-    //delete person.hescode
-    //console.log(person.hescode);
-  
-    let allObject;
-    for (const key in person) {
-      allObject += person[key]
+   //console
+  console.log(person);
+  console.log(person.adi.toLowerCase());
+  console.log(person.soyadi);
+  console.log(typeof person.soyadi);
+  console.log(person.isLogin);
+  console.log(person.hescode);
+  console.log(person.teknolojiDizi);
+  console.log(person.teknolojiDizi[0]);
+  console.log(person.javaObjesi);
+
+  //sonradan objeye attributes eklemek
+  person.meslek = "Bilgisayar Mühendisi";
+  console.log(person.meslek);
+  console.log(person.hescode);
+  console.log(person['hescode']);
+  //delete
+  //delete person.hescode
+  //console.log(person.hescode);
+
+  let allObject;
+  for (const key in person) {
+    allObject += person[key]
+  }
+  // alert(allObject)
+}
+//personObject();
+
+
+let stu = () => {
+  //CONSTRUCTUR
+  function Student(adi, soyadi, yas) {
+    this.adi = adi;
+    this.soyadi = soyadi;
+    this.yas = yas;
+    console.log(this);
+    this.birthday = function () {
+      //return 2022-yas;
+      return new Date().getFullYear() - yas;
     }
-    // alert(allObject)
   }
-  //personObject();
-  
-  
-  let stu = () => {
-    //CONSTRUCTUR
-    function Student(adi, soyadi, yas) {
-      this.adi = adi;
-      this.soyadi = soyadi;
-      this.yas = yas;
-      console.log(this);
-      this.birthday = function () {
-        //return 2022-yas;
-        return new Date().getFullYear() - yas;
-      }
+
+  let resultData = new Student("adı", "Soyadı", 25);
+  console.log(resultData.birthday());
+
+}
+//stu();
+
+const tea = () => {
+  let Teacher = function (adi, soyadi, yas) {
+    this.adi = adi;
+    this.soyadi = soyadi;
+    this.yas = yas;
+    console.log(this);
+    this.dogumTarihi = function () {
+      return new Date().getFullYear() - yas;
+    };
+    this.emekliYasi = () => {
+      return 60 - yas;
     }
-  
-    let resultData = new Student("adı", "Soyadı", 25);
-    console.log(resultData.birthday());
-  
+  }//Teacher function end
+
+  let result = new Teacher("adi", "soyadi", 25);
+  console.log(`Doğum Tarihi: ${result.dogumTarihi()}`)
+  console.log(`Emeklilik Kalan Zamanı: ${result.emekliYasi()}`)
+}//tea end
+//tea();
+
+
+let callApplyBind = () => {
+  //1- call apply bind
+  //this kullandık
+  let dataFunction = function () {
+    console.log("Değer: " + this.adi)
+    console.log(this);
   }
-  //stu();
-  
-  const tea = () => {
-    let Teacher = function (adi, soyadi, yas) {
-      this.adi = adi;
-      this.soyadi = soyadi;
-      this.yas = yas;
-      console.log(this);
-      this.dogumTarihi = function () {
-        return new Date().getFullYear() - yas;
-      };
-      this.emekliYasi = () => {
-        return 60 - yas;
-      }
-    }//Teacher function end
-  
-    let result = new Teacher("adi", "soyadi", 25);
-    console.log(`Doğum Tarihi: ${result.dogumTarihi()}`)
-    console.log(`Emeklilik Kalan Zamanı: ${result.emekliYasi()}`)
-  }//tea end
-  //tea();
-  
-  
-  let callApplyBind = () => {
-    //1- call apply bind
-    //this kullandık
-    let dataFunction = function () {
-      console.log("Değer: " + this.adi)
-      console.log(this);
-    }
-  
-    //call apply bind :ENES
-    let object = { adi: "Ferhat", soyadi: "Kaplan" };
-    //dataFunction.call(object);
-    //dataFunction.apply(object);
-    dataFunction();
-  
-    let result5 = dataFunction.bind(object);
-    result5();
+
+  //call apply bind :ENES
+  let object = { adi: "Ferhat", soyadi: "Kaplan" };
+  //dataFunction.call(object);
+  //dataFunction.apply(object);
+  dataFunction();
+
+  let result5 = dataFunction.bind(object);
+  result5();
+}
+//callApplyBind();
+
+
+///////////////////////////////////////////
+
+const callApplyBindParameter = function () {
+  let dataFunction2 = function (tekno2, tekno3) {
+    console.log("Java teknolojileri: " + this.tekno1 + " " + tekno2 + " " + tekno3)
   }
-  //callApplyBind();
-  
-  
-  ///////////////////////////////////////////
-  
-  const callApplyBindParameter = function () {
-    let dataFunction2 = function (tekno2, tekno3) {
-      console.log("Java teknolojileri: " + this.tekno1 + " " + tekno2 + " " + tekno3)
-    }
-  
-    let objectData = { tekno1: "JavaME" }
-    // dataFunction2.call(objectData,"JavaSE","javaEE");
-    // dataFunction2.apply(objectData,["JavaSE","javaEE"]);
-    let result6 = dataFunction2.bind(objectData, "JavaSE", "javaEE");
-    result6()
-  }
-  
-  //callApplyBindParameter();
-  
-  
-  ///////////////////////////////////////////
-  // DOM
-  // Document Object Model
-  // web sayfalarımızda javascript üzerinden  HTML-CSS-JS yönetimini sağlar.
-  // F12 Google Chrome önemlidir.
-  
-  function parag() {
-    let result = prompt("Lütfen birşey yazınız");
-    setInterval(function () {
-      //id
-      //window.document.getElementById("paragId").innerHTML=result;
-      // document.getElementById("paragId").innerHTML=result;
-      // document.getElementById("paragId").innerText=result;
-  
-      //className
-      // const className = "paragrafClass";
-      // const dom = document.getElementsByClassName(className)[0];
-      // dom.innerHTML = result;
-  
-      //tagName
-      // const tagName = "p";
-      // const dom = document.getElementsByTagName(tagName)[0];
-      // dom.innerHTML = result;
-  
-      //name
-      // const nameDate = "paragrafName";
-      // const dom = document.getElementsByName(nameDate)[0];
-      // dom.innerHTML = result;
-  
-      //querySelector
-      //document.querySelector("#paragId").innerHTML = result;
-      //document.querySelector(".paragrafClass").innerHTML = result;
-      //document.querySelector("p").innerHTML = result;
-  
-      //CSS 
-      window.document.getElementById("paragId").innerHTML = result;
-      // document.getElementById("paragId").style.color = "orange";
-      // document.getElementById("paragId").style.backgroundColor = "blue";
-      // document.getElementById("paragId").style.marginTop = "2rem";
-      // document.getElementById("paragId").style.padding = "1rem";
-  
-    }, 2000);
-  }
-  
-  //addEventListener 
-  //kullanıcı bir olay gerçekleştiğinde sürekli dinleyen function
-  //----- .addEventListener(olay,function,false)
-  //1-A) Function olmadan direk çağırmak
+
+  let objectData = { tekno1: "JavaME" }
+  // dataFunction2.call(objectData,"JavaSE","javaEE");
+  // dataFunction2.apply(objectData,["JavaSE","javaEE"]);
+  let result6 = dataFunction2.bind(objectData, "JavaSE", "javaEE");
+  result6()
+}
+
+//callApplyBindParameter();
+
+
+///////////////////////////////////////////
+// DOM
+// Document Object Model
+// web sayfalarımızda javascript üzerinden  HTML-CSS-JS yönetimini sağlar.
+// F12 Google Chrome önemlidir.
+
+function parag() {
+  let result = prompt("Lütfen birşey yazınız");
+  setInterval(function () {
+    //id
+    //window.document.getElementById("paragId").innerHTML=result;
+    // document.getElementById("paragId").innerHTML=result;
+    // document.getElementById("paragId").innerText=result;
+
+    //className
+    // const className = "paragrafClass";
+    // const dom = document.getElementsByClassName(className)[0];
+    // dom.innerHTML = result;
+
+    //tagName
+    // const tagName = "p";
+    // const dom = document.getElementsByTagName(tagName)[0];
+    // dom.innerHTML = result;
+
+    //name
+    // const nameDate = "paragrafName";
+    // const dom = document.getElementsByName(nameDate)[0];
+    // dom.innerHTML = result;
+
+    //querySelector
+    //document.querySelector("#paragId").innerHTML = result;
+    //document.querySelector(".paragrafClass").innerHTML = result;
+    //document.querySelector("p").innerHTML = result;
+
+    //CSS 
+    window.document.getElementById("paragId").innerHTML = result;
+    // document.getElementById("paragId").style.color = "orange";
+    // document.getElementById("paragId").style.backgroundColor = "blue";
+    // document.getElementById("paragId").style.marginTop = "2rem";
+    // document.getElementById("paragId").style.padding = "1rem";
+
+  }, 2000);
+}
+
+//addEventListener 
+//kullanıcı bir olay gerçekleştiğinde sürekli dinleyen function
+//----- .addEventListener(olay,function,false)
+//1-A) Function olmadan direk çağırmak
+let result7 = document.getElementById("h1_id").addEventListener("click", function (e) {
+  alert("Tıklandı")
+}, false);
+
+//1-B) Function yazarak çağırmak
+function deneme7() {
   let result7 = document.getElementById("h1_id").addEventListener("click", function (e) {
     alert("Tıklandı")
   }, false);
-  
-  //1-B) Function yazarak çağırmak
-  function deneme7() {
-    let result7 = document.getElementById("h1_id").addEventListener("click", function (e) {
-      alert("Tıklandı")
-    }, false);
-  }
-  deneme7()
-  //----- .removeEventListener(olay,function)
-  //2-)
-  
-  //////////////////////////////////////////////////////////
-  //jQuery 
-  //jqeury hazır olduğunda çalışsın.
-  //$(document).ready(function(){});
-  //$(function(){});
-  
-  /*
-   Group Selector:
-   p{}     ==> tüm p'ler
-   div,p{} ==> tüm div'ler ve tüm p'ler
-   div p{} ==> div içindeki tüm p'ler
-   div>p{} ==> div içindeki tüm p'ler
-   div~p   ==>div ile p aynı seviyede tüm p'ler
-   div+p   ==>div ile p aynı seviyede tek p
-   */
-  
-  // window   ==> bütün neslere erişmek için kullanırız.
-  // document ==> sadece o sayfaya erişim sağlarız.
-  
-  // npm  ==> senkron(Aynı anda sadece 1 işi yapar yeni işi bekletir)
-  // yarn ==> Asenkron (Aynı anda birden fazla iş yapabiliyor daha hızlıdır.)
-  
-  // Framework: 
-  // Önceden yazılmış hazır kodlar vardır.
-  // Belli kuralları vardır bizden beklenen sadece bu kuralları yerine getirmektir. 
-  // Projelerde daha hızlı ilerleriz. 
-  // Examples: Angular(Microsoft),Vue
-  
-  // Libraries:
-  // Önceden yazılmış hazır kodlar vardır.
-  // Özgürüz Kullandığımız dili kullanarak kodlar yazabiliriz
-  // Herşeyi kendimiz çağırdığımız için framework'e göre daha yavaş ilerleyebiliriz.
-  // Examples: jQuery , React(Facebook)
-  
-  // JavaScript Kütühanesidir.
-  // Daha az kodla daha fazla işlem yapmamıza olanak sağlar.
-  // AJAX kullanacaksak native-javascriptte göre jQuery bize daha kolay gelecektir.
-  // Google Netflix IBM Microsoft
-  // jquery kullanırken: CDN (Content Delivery Network)  Tercihim bu.
-  
-  // Why jQuery?
-  // Google
-  // Microsoft
-  // IBM
-  // Netflix
-  
-  // jquery CDN unutma: head tagleri arasına yazalım.
-  
-  {/* <head>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  </head>
-  <script src="Template.js"></script>
-  </body>
-  </html> 
-  *
-  JavaScript ==> çift tırnak kullanmak
-  jQuery     ==> tek tırnak kullanmak */}
-  
-  
-  // val()
-  // input taglerin value değerlerini almak istersek yani input içeriğine yazılanları almak istersek;
-  
-  // val  get
-  // <input type="text" value="değer" />
-  // alert( $("input").val() );
-  
-  // val => set
-  // alert( $("input").val("değiştirdim") );
-  
-  // val()
-  // <form>
-  // <input type="text" name="adi" id="adi" />
-  
-  // <button id="gonder" name="gönder" onclick="online" > Gönder </button>
-  // </form>
-  
-  // $(document).ready(function()){
-  // val adim=$("#adi").val();
-  // alert(adim);
-  // }
-  
-  
-  
-  
-  
-  function jQueryFunction() {
-    let result = prompt("Lütfen birşey yazınız");
-  
-    setInterval(function () {
-      //
-      //id ==> DOM - JQUERY HTML
-      // window.document.getElementById("paragId").innerHTML=result;
-      // document.getElementById("paragId").innerHTML=result;
-      $('#paragId').html(result);
-  
-      //DOM - JQUERY TEXT
-      //document.getElementById("paragId").innerText=result;
-      // $('#paragId').text(result);
-  
-      //className ==> DOM - JQUERY
-      //const className = "paragrafClass";
-      //document.getElementsByClassName(className)[0].innerHTML = result;
-      //$(".paragrafClass").html(result);
-  
-      //tagName
-      //const tagName = "p";
-      //document.getElementsByTagName(tagName)[0].innerHTML = result;
-      //$(tagName).html(result);
-  
-      //CSS  ==> DOM - JQUERY 
-      $('#paragId').html(result);
-      //document.getElementById("paragId").style.color = "orange";
-      // document.getElementById("paragId").style.backgroundColor = "blue";
-      // document.getElementById("paragId").style.marginTop = "2rem";
-      // document.getElementById("paragId").style.padding = "1rem";
-      // $('#paragId').css("backgroundColor","blue").css("marginTop","2rem").css("padding","1rem");
-  
-      //jQuery css object
-      //$('#paragId').css(
-      //  { "backgroundColor": "blue", "marginTop": "2rem", "padding": "1rem" }
-      // );
-  
-      //jQuery css object
-      const jqueryObject = { "backgroundColor": "blue", "marginTop": "2rem", "padding": "1rem" }
-      $('#paragId').css(jqueryObject);
-  
-      //jquery addEventListener
-      $('#h1_id').click(function () { alert("jquery Tıklandı") })
-    }, 500);
-  }
-  //jQueryFunction();
-  
-  
-  
-  
-  //
-  // HTML
-  // <h4 id="jquery_id" class="mb-5 border">jquery </h4>
-  //  <button class="btn btn-primary" onclick="dom_javascript()">DOM</button>
-  //  <button class="btn btn-warning" onclick="dom_jquery()">jQuery</button>
-  //
-  //
-  // JAVASCRIPT
-  // function dom_javascript(){
-  //  document.getElementById("jquery_id").innerHTML="<b><mark>JavaScript</mark></b>"
-  // }
-  // function dom_jquery(){
-  //  // $(selector).attributes()
-  // $('#jquery_id').html("<b><mark><i>jQuery</i></mark></b>")
-  // }
-  //
-  // <!-- UNUTMA: önce sayfaların yüklenmesi için <script> </script> alt tarafa yazıyoruz. ancak
-  // document.ready yazdığımızdan dolayı ister head tagleri arasında bile YAZABİLİRİZ
-  // -->
-  //
-  // $(document).ready()
-  // $(document).ready(function (){
-  //   $(‘p’).html();      $(‘p’).text();     $(‘p’).css();
-  // });
-  //
-  //
-  // $(function (){
-  //   $(‘p’).html();      $(‘p’).text();     $(‘p’).css();
-  // });
+}
+deneme7()
+//----- .removeEventListener(olay,function)
+//2-)
+
+//////////////////////////////////////////////////////////
+//jQuery 
+//jqeury hazır olduğunda çalışsın.
+//$(document).ready(function(){});
+//$(function(){});
+
+/*
+ Group Selector:
+ p{}     ==> tüm p'ler
+ div,p{} ==> tüm div'ler ve tüm p'ler
+ div p{} ==> div içindeki tüm p'ler
+ div>p{} ==> div içindeki tüm p'ler
+ div~p   ==>div ile p aynı seviyede tüm p'ler
+ div+p   ==>div ile p aynı seviyede tek p
+ */
+
+// window   ==> bütün neslere erişmek için kullanırız.
+// document ==> sadece o sayfaya erişim sağlarız.
+
+// npm  ==> senkron(Aynı anda sadece 1 işi yapar yeni işi bekletir)
+// yarn ==> Asenkron (Aynı anda birden fazla iş yapabiliyor daha hızlıdır.)
+
+// Framework: 
+// Önceden yazılmış hazır kodlar vardır.
+// Belli kuralları vardır bizden beklenen sadece bu kuralları yerine getirmektir. 
+// Projelerde daha hızlı ilerleriz. 
+// Examples: Angular(Microsoft),Vue
+
+// Libraries:
+// Önceden yazılmış hazır kodlar vardır.
+// Özgürüz Kullandığımız dili kullanarak kodlar yazabiliriz
+// Herşeyi kendimiz çağırdığımız için framework'e göre daha yavaş ilerleyebiliriz.
+// Examples: jQuery , React(Facebook)
+
+// JavaScript Kütühanesidir.
+// Daha az kodla daha fazla işlem yapmamıza olanak sağlar.
+// AJAX kullanacaksak native-javascriptte göre jQuery bize daha kolay gelecektir.
+// Google Netflix IBM Microsoft
+// jquery kullanırken: CDN (Content Delivery Network)  Tercihim bu.
+
+
+
+{/* <head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<script src="Template.js"></script>
+</body>
+</html> 
+*
+JavaScript ==> çift tırnak kullanmak
+jQuery     ==> tek tırnak kullanmak */}
+
+
+// val()
+// input taglerin value değerlerini almak istersek yani input içeriğine yazılanları almak istersek;
+
+// val  get
+// <input type="text" value="değer" />
+// alert( $("input").val() );
+
+// val => set
+// alert( $("input").val("değiştirdim") );
+
+// val()
+// <form>
+// <input type="text" name="adi" id="adi" />
+
+// <button id="gonder" name="gönder" onclick="online" > Gönder </button>
+// </form>
+
+// $(document).ready(function()){
+// val adim=$("#adi").val();
+// alert(adim);
+// }
+
+
+
+
+
+function jQueryFunction() {
+  let result = prompt("Lütfen birşey yazınız");
+
+  setInterval(function () {
+    //
+    //id ==> DOM - JQUERY HTML
+    // window.document.getElementById("paragId").innerHTML=result;
+    // document.getElementById("paragId").innerHTML=result;
+    $('#paragId').html(result);
+
+    //DOM - JQUERY TEXT
+    //document.getElementById("paragId").innerText=result;
+    // $('#paragId').text(result);
+
+    //className ==> DOM - JQUERY
+    //const className = "paragrafClass";
+    //document.getElementsByClassName(className)[0].innerHTML = result;
+    //$(".paragrafClass").html(result);
+
+    //tagName
+    //const tagName = "p";
+    //document.getElementsByTagName(tagName)[0].innerHTML = result;
+    //$(tagName).html(result);
+
+    //CSS  ==> DOM - JQUERY 
+    $('#paragId').html(result);
+    //document.getElementById("paragId").style.color = "orange";
+    // document.getElementById("paragId").style.backgroundColor = "blue";
+    // document.getElementById("paragId").style.marginTop = "2rem";
+    // document.getElementById("paragId").style.padding = "1rem";
+    // $('#paragId').css("backgroundColor","blue").css("marginTop","2rem").css("padding","1rem");
+
+    //jQuery css object
+    //$('#paragId').css(
+    //  { "backgroundColor": "blue", "marginTop": "2rem", "padding": "1rem" }
+    // );
+
+    //jQuery css object
+    const jqueryObject = { "backgroundColor": "blue", "marginTop": "2rem", "padding": "1rem" }
+    $('#paragId').css(jqueryObject);
+
+    //jquery addEventListener
+    $('#h1_id').click(function () { alert("jquery Tıklandı") })
+  }, 500);
+}
+//jQueryFunction();
+
+
+
+
+//
+// HTML
+// <h4 id="jquery_id" class="mb-5 border">jquery </h4>
+//  <button class="btn btn-primary" onclick="dom_javascript()">DOM</button>
+//  <button class="btn btn-warning" onclick="dom_jquery()">jQuery</button>
+//
+//
+// JAVASCRIPT
+// function dom_javascript(){
+//  document.getElementById("jquery_id").innerHTML="<b><mark>JavaScript</mark></b>"
+// }
+// function dom_jquery(){
+//  // $(selector).attributes()
+// $('#jquery_id').html("<b><mark><i>jQuery</i></mark></b>")
+// }
+//
+// <!-- UNUTMA: önce sayfaların yüklenmesi için <script> </script> alt tarafa yazıyoruz. ancak
+// document.ready yazdığımızdan dolayı ister head tagleri arasında bile YAZABİLİRİZ
+// -->
+//
+// $(document).ready()
+// $(document).ready(function (){
+//   $(‘p’).html();      $(‘p’).text();     $(‘p’).css();
+// });
+//
+//
+// $(function (){
+//   $(‘p’).html();      $(‘p’).text();     $(‘p’).css();
+// });
   
 
 

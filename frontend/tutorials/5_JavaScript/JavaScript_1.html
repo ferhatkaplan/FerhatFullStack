@@ -1,68 +1,120 @@
 <!doctype html>
-<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
-
+<html  th:lang="${#locale.language}"  xmlns:th="http://www.thymeleaf.org" >
 <head>
-    <title>Title</title>
-    <!-- Turkce karakter -->
-    <meta charset="utf-8">
+      <title>JavaScript Html</title>
+      <!-- Turkce karakter -->
+      <meta charset="utf-8">
 
-    <!-- responsive design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- responsive design -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- seo -->
-    <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,javase" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+      <!-- seo -->
+      <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,javase" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      <!-- font-awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+      <!-- google font -->
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+      <!-- Bootstrap CSS v5.0.2 -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
-    <!-- jquery  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <!-- jquery  -->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <!-- react libraries -->
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+      <!-- react libraries -->
+      <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
-    <!--      <link rel="stylesheet"   th:href="@{/css/index.css}">-->
-    <!--      <script th:src="@{/js/index.js}"></script>-->
-    <!-- external js -->
-    <script src="template.js"></script>
+      <!--      <link rel="stylesheet"   th:href="@{/css/index.css}">-->
+      <!--      <script th:src="@{/js/index.js}"></script>-->
+
 </head>
 
-<body class="container">
-    <!-- start codes -->
-    <h1 class="text-info">JavaScript</h1>
+<body class="container bg-dark text-white">
+<!-- start codes -->
+<h1 id="h1_id" class="text-info">Ana Sayfa</h1>
 
-    <!-- internal js -->
-    <script>
-        // alert("selam")
-    </script>
-    <!-- 
-    window=> bütün nesnelere erişmek için kullanılır.
-     document=> sadece o sayfaya erişim sağlamak için kullanılır.
-     npm=> senkron (aynı anda sadece 1 iş yapar diğerlerini bekletir)
-     yarn=> asenkron (birden fazla iş yapar ve daha hızlıdır)
+<!-- internal js -->
+<script>
+      /* alert("Merhabalar") */
+</script>
 
-     libraries: Önceden yazılmış hazır kodlar vardır.
-     İstediğimiz dili kullanırız. (jQuery, React)
+<!-- 
+window   ==> bütün neslere erişmek için kullanırız.
+document ==> sadece o sayfaya erişim sağlarız.
 
-    
-     Framework: Belli kuralları vardır. Bizden beklenen sadece bu kurallarrı yerine getirmektir.
-     Daha hızlı iş yapar. (Angular, Vue)
-    -->
+npm  ==> senkron(Aynı anda sadece 1 işi yapar yeni işi bekletir)
+yarn ==> Asenkron (Aynı anda birden fazla iş yapabiliyor daha hızlıdır.)
 
 
-    <!-- ends codes -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+Framework: 
+Önceden yazılmış hazır kodlar vardır.
+Belli kuralları vardır bizden beklenen sadece bu kuralları yerine getirmektir. 
+Projelerde daha hızlı ilerleriz. 
+Examples: Angular(Microsoft),Vue
+
+
+Libraries:
+Önceden yazılmış hazır kodlar vardır.
+Özgürüz Kullandığımız dili kullanarak kodlar yazabiliriz
+Herşeyi kendimiz çağırdığımız için framework'e göre daha yavaş ilerleyebiliriz.
+Examples: jQuery , React(Facebook)
+-->
+
+<div id="temp1"></div>
+<div id="temp2"></div>
+
+<button class="btn btn-info" onclick="parag()">onclick</button>
+<button class="btn btn-info" ondblclick="parag()">ondblclick</button>
+<button class="btn btn-info" onkeydown="parag()">onkeydown</button>
+
+<!-- <button class="btn btn-warning" onmouseover="parag()">onmouseover</button> -->
+
+<p id="paragId" class="paragrafClass" name="paragrafName"></p>
+
+<style>
+      #div_my_id{
+            background-color: rgb(11, 216, 247);
+            color:rgb(0, 0, 0);
+            min-height: 15rem;
+            width: 100%;
+            padding:2rem;
+      }
+</style>
+<div id="div_my_id">
+       <div>Random:<span id="random_id"></span></div>
+      <button onclick="stop()" class="btn btn-dark mt-2">STOP</button>
+</div>
+
+<script>
+      const staticDivId=document.getElementById("div_my_id");
+      staticDivId.addEventListener("mousemove",eventFunctionData);
+
+      //event my function
+      function eventFunctionData(){
+            document.getElementById("random_id").innerHTML=Math.random();  
+            document.getElementById("random_id").style.color="black";
+      }
+
+      //stop
+      function stop(){
+            staticDivId.removeEventListener("mousemove",eventFunctionData);
+      }
+ </script>
+
+
+<!-- ends codes -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+
+<!-- external js -->
+<script src="Template.js"></script>
 </body>
-
 </html>
