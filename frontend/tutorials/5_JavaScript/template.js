@@ -83,6 +83,42 @@ console.log(kelime)
 // //değişken isimlerini camelCase kullanalım.
 // var degiskenAdiKullanimi="camel case";
 
+// //sonuna sayı yazabiliriz.
+// degisken44="Değişken merhabalar";
+
+// //başına sayı yazamayız.
+// 11degisken="Değişken merhabalar";
+
+// //başına $ ve _ yazabiliriz.
+// $degisken="Değişken merhabalar";
+// _degisken="Değişken merhabalar";
+
+// //başına $ ve _ haricinde özel simge yazamayız.
+// -+*/#degisken="Değişken merhabalar";
+
+//Operator
+// 8 bit = 1 byte
+// 1 bit (0,1)
+
+// +  ==> additional
+// -  ==> substaction
+// *  ==> multiplication
+// ** ==> exponentiation(ES6)
+// /  ==> division
+// %  ==> modules
+// ++ ==> increment (artırmak)
+// -- ==> deincrement (azaltmak)
+
+// logic operator(Mantıksal Operatörler)           ==> &=VE |=VEYA
+// mathematics operator (matematiksel operatörler) ==> x**y=x üzerine y,  + - * /=bölüm %=bölümünden kalan
+// comparation  operator                           ==> (> >= < <= ! == ===)
+// postfix increment                               ==> X++
+// postfix deincrement                             ==> X--
+// pre increment                                   ==> ++X
+// pre deincrement                                 ==> --X
+
+// ! = değil
+
 
 
 
