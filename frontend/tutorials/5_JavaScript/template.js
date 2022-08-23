@@ -54,6 +54,35 @@ kelime=true;
 console.log(typeof kelime)
 console.log(kelime)
 
+// Çıktı
+//console.log("Çıktı : console.log")
+//alert("Çıktı : alert")
+//window.alert("Çıktı : window.alert")
+//document.write(result + "merhabalarben document.write")
+//var result=prompt("kullanıcıdan veri almak için")
+
+ //Çıktı
+ //console.log("Console : console.log");
+ //console.warn("Console : console.warn");
+ //console.error("Console : console.error");
+ //console.info("Console : console.info");
+
+// //variable declaration: değer atamadan sadece değişken oluşturma işlemine denir
+// var number;
+// console.log(number)
+
+// //variable initialization: ilk değer ataması yapmaya denir.
+// //toplama  etkisiz eleman: 0
+// //çarpmada etkisiz eleman: 1
+// var toplam=0;
+
+// //variable common rules (Syntax rules)
+// var degisken="Değişken merhabalar";
+// //değişkenlerde:
+// //Türkçe karakter olan: üğşçöıİ kullanmayalım
+// //değişken isimlerini camelCase kullanalım.
+// var degiskenAdiKullanimi="camel case";
+
 
 
 
