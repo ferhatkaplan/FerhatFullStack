@@ -119,6 +119,49 @@ console.log(kelime)
 
 // ! = değil
 
+// =    ==> ATAMA
+// ==   ==> EŞİT (Türe bakmıyor sadece eşitliğe   bakıyor) ==> 11="11" ==> SONUÇ EŞİT
+// ===  ==> EŞİT (Türe bakıyor  ve     eşitliğede bakıyor) ==> 11="11" ==> SONUÇ EŞİTDEĞİL
+
+//CAST String() Number()
+
+//var sayi1="11";
+//console.log(typeof sayi1)
+//var sayi2="33";
+//console.log(typeof sayi2)
+//console.log(sayi1 + sayi2)
+//console.log(Number(sayi1) +String(sayi2) )
+
+//kullanıcıdan alınan 2 sayının üssü 4^2=16 (prompt, x**2)
+//Not : prompt'tan string gelir.
+//var data1=prompt("Bir sayi gir");
+//var result = data1 ** 2;
+//console.log(result)
+
+//undefined: tanımsız. ; eğer değişkene bir başlangıç verilmezse bu kullanılır.
+var result;
+console.log(result)
+
+// //NaN: Not A Number
+// // bir sayıyı string'e böldüğümde
+// var sayi1 = 14 / "asd";
+// console.log(sayi1);
+
+// //infinity:
+// //Bir sayıyı sıfıra bölemezsin ve sonsuzdur
+// var sayi2 = 12 / 0;
+// console.log(sayi2)
+
+// new : hafızdan bir yer açar bizim için
+// null: olan hafızayı boşaltır
+// zero: sıfır null ile aynı değildir zero hafızda bir yere sahip ancak değeri sıfırdır
+
+//escape character simgesi ==>  \ (back slash)
+// single quote ==> Tek Tırnak
+// double quote ==> Çift Tırnak
+// \t ==> backspace
+// \n=new
+//console.log("\"\n\tdeneme")
 
 
 
