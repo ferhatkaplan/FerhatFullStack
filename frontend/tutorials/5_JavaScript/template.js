@@ -1210,8 +1210,8 @@ function parag() {
 
     //CSS 
     window.document.getElementById("paragId").innerHTML = result;
-    // document.getElementById("paragId").style.color = "orange";
-    // document.getElementById("paragId").style.backgroundColor = "blue";
+    // document.getElementById("paragId").style.color = "aqua";
+    // document.getElementById("paragId").style.backgroundColor = "black";
     // document.getElementById("paragId").style.marginTop = "2rem";
     // document.getElementById("paragId").style.padding = "1rem";
 
@@ -1238,7 +1238,7 @@ deneme7()
 
 //////////////////////////////////////////////////////////
 //jQuery 
-//jqeury hazır olduğunda çalışsın.
+//jquery hazır olduğunda çalışsın.
 //$(document).ready(function(){});
 //$(function(){});
 
@@ -1342,15 +1342,15 @@ function jQueryFunction() {
 
     //CSS  ==> DOM - JQUERY 
     $('#paragId').html(result);
-    //document.getElementById("paragId").style.color = "orange";
-    // document.getElementById("paragId").style.backgroundColor = "blue";
+    //document.getElementById("paragId").style.color = "info";
+    // document.getElementById("paragId").style.backgroundColor = "black";
     // document.getElementById("paragId").style.marginTop = "2rem";
     // document.getElementById("paragId").style.padding = "1rem";
-    // $('#paragId').css("backgroundColor","blue").css("marginTop","2rem").css("padding","1rem");
+    // $('#paragId').css("backgroundColor","black").css("marginTop","2rem").css("padding","1rem");
 
     //jQuery css object
     //$('#paragId').css(
-    //  { "backgroundColor": "blue", "marginTop": "2rem", "padding": "1rem" }
+    //  { "backgroundColor": "info", "marginTop": "2rem", "padding": "1rem" }
     // );
 
     //jQuery css object
