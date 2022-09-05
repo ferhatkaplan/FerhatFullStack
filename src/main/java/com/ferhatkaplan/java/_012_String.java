@@ -18,6 +18,44 @@ public class _012_String {
         System.out.println(dataValue.charAt(20));
         System.out.println(dataValue.charAt(dataValue.length() - 1));
 
+        System.out.println(dataValue.indexOf("Merhabalar"));
+        System.out.println(dataValue.lastIndexOf("Merhabalar"));
+
+        //replace: değiştirmek için
+        String newData = "Yeni kelime";
+        String allData = dataValue.replace(dataValue, newData);
+        System.out.println(allData);
+
+        //contains: Bu cümlede bu kelime geçiyor mu ? sonuç doğruysa: true döner
+        System.out.println(dataValue.contains("Merhabalar"));
+
+        //concat: cümlenin sonuna ekleme yapar.
+        String data = dataValue.concat(".INC");
+        System.out.println(data);
+
+        //isEmpty(): Boş mu ? eğer varsa hayır dolu dönüş false
+        System.out.println(dataValue.isEmpty());
+
+        //equals: kelimeler birbirine eşit mi eşitse dönüş true
+        System.out.println(dataValue.equals("Merhabalar Nasılsınız Merhabalar"));
+
+
+        //subString: kelimeyi parçalamak
+        //unutma: subString conditional ile çözmemiz gerekiyor.
+        if (dataValue.length() > 30) {
+            System.out.println(dataValue.substring(1));
+            System.out.println(dataValue.substring(1, 4)); //1<=X<=4-1
+            //kelimenin sondan 2 karakterden sonrasını göster
+            System.out.println(dataValue.substring(30));
+            System.out.println(dataValue.substring(dataValue.length() - 2));
+        }
+
+        //split: regex String dizisine dönüştürür.
+        String[] arrayData = dataValue.split(" ");
+        for (String temp : arrayData) {
+            System.out.println(temp);
+        }
+
 
     }
 }
