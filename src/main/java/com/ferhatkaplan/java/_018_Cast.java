@@ -6,7 +6,7 @@ public class _018_Cast {
     public static void main(String[] args) {
         //Cast: dönüştürme
         //String => tam sayıya çevirmek
-        //Tam sayı=> String'e çeviriri
+        //Tam sayı=> String'e çevirir
 
         //1-) Cast float,double  ==> f-L
         float f1=14.45f;
